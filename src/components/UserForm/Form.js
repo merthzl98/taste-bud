@@ -14,7 +14,7 @@ const Form = (props) => {
   };
 
   const submitFormHandler = (event) => {
-    event.pereventDefault();
+    event.preventDefault();
     console.log("submitted");
   };
   return (

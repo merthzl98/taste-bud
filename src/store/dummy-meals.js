@@ -1,6 +1,4 @@
-import axios from "axios";
-
-const DUMMY_MEALS = [
+export const DUMMY_MEALS = [
   {
     id: "m1",
     name: "Sushi",
@@ -25,17 +23,28 @@ const DUMMY_MEALS = [
     description: "Healthy...and green...",
     price: 18.99,
   },
+  {
+    id: "m5",
+    name: "Margherita Pizza",
+    description: "Classic Italian pizza with tomato and mozzarella",
+    price: 14.99,
+  },
+  {
+    id: "m6",
+    name: "Chicken Alfredo",
+    description: "Creamy pasta with grilled chicken",
+    price: 19.99,
+  },
+  {
+    id: "m7",
+    name: "Vegetable Stir-Fry",
+    description: "A delicious mix of fresh vegetables and tofu",
+    price: 15.49,
+  },
+  {
+    id: "m8",
+    name: "Chocolate Cake",
+    description: "Decadent chocolate cake with a rich ganache",
+    price: 8.99,
+  },
 ];
-
-for (let i=0, l= DUMMY_MEALS.length ; l>i; i++ ) {
-  axios
-  .post(
-    "https://react-http-29afe-default-rtdb.firebaseio.com/meals.json",
-    DUMMY_MEALS[i]
-  )
-  .then((response) => {
-    console.log(response.status);
-    console.log(response.DUMMY_MEALS.token);
-  });
-}
-

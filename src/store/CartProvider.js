@@ -66,7 +66,6 @@ const CartProvider = (props) => {
 
   const addItemToCartHandler = (item) => {
     dispatchCartAction({ type: 'ADD', item: item });
-    console.log("eklendi");
   };
 
   const removeItemFromCartHandler = (id) => {

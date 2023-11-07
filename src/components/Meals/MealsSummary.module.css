@@ -3,16 +3,31 @@
   max-width: 45rem;
   width: 90%;
   margin: auto;
-  margin-top: -10rem;
+  margin-top: -4rem;
   position: relative;
-  background-color: #383838;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
   color: white;
   border-radius: 14px;
   padding: 1rem;
-  box-shadow: 0 1px 18px 10px rgba(0, 0, 0, 0.25);
+  display: flex;
+  gap: 1rem;
 }
 
-.summary h2 {
+.summary img {
+  max-width: 10rem;
+  height: auto;
+  border-radius: .25rem;
+}
+
+.description {
+  padding: 0 1rem;
+}
+
+.description h2 {
   font-size: 2rem;
   margin-top: 0;
 }

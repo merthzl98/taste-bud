@@ -1,17 +1,20 @@
-import classes from './MealsSummary.module.css';
+import classes from "./MealsSummary.module.css";
+import pizzaImage from "../../assets/pizza.jpg";
 
 const MealsSummary = () => {
   return (
     <section className={classes.summary}>
-      <h2>Delicious Food, Delivered To You</h2>
-      <p>
-        Choose your favorite meal from our broad selection of available meals
-        and enjoy a delicious lunch or dinner at home.
-      </p>
-      <p>
-        All our meals are cooked with high-quality ingredients, just-in-time and
-        of course by experienced chefs!
-      </p>
+      <img src={pizzaImage} alt="pizza" />
+      <div className={classes.description}>
+        <h2>Delicious Food</h2>
+        <p>
+          Welcome to TasteBud, where we bring the world of culinary delight
+          right to your doorstep. Delve into a world of flavors and convenience
+          with our diverse selection of mouthwatering meals. Whether you're in
+          the mood for a quick lunch or a delectable dinner, we've got you
+          covered.
+        </p>
+      </div>
     </section>
   );
 };
