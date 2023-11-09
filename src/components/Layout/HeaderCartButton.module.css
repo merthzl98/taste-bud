@@ -4,7 +4,7 @@
   border: none;
   background-color: rgba(148, 187, 233, 1);
   color: white;
-  padding: 0.75rem 3rem;
+  padding: 0.5rem 2rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -56,5 +56,23 @@
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@media (700px >= width) {
+  .button {
+    padding: 0.25rem 1rem;
+  }
+  
+  .typography {
+    display: none;
+  }
+
+  .icon {
+    margin-right: 0.25rem;
+  }
+
+  .badge {
+    margin-left: 0.25rem;
   }
 }

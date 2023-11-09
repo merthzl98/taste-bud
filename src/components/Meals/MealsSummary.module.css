@@ -32,7 +32,7 @@
   margin-top: 0;
 }
 
-@media (700px >= width) {
+@media (800px >= width) {
   .summary img {
     display: none;
   }
