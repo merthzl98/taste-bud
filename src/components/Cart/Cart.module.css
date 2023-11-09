@@ -13,6 +13,7 @@
   font-weight: bold;
   font-size: 1.5rem;
   margin: 1rem 0;
+  color: #1F1F1F;
 }
 
 .actions {
@@ -23,24 +24,25 @@
   font: inherit;
   cursor: pointer;
   background-color: transparent;
-  border: 1px solid #8a2b06;
+  border: 1px solid rgba(148, 187, 233, 1);
   padding: 0.5rem 2rem;
-  border-radius: 25px;
+  border-radius: 0.5rem;
   margin-left: 1rem;
+  transition: all 400ms;
 }
 
 .actions button:hover,
 .actions button:active {
-  background-color: #5a1a01;
-  border-color: #5a1a01;
+  background-color: rgb(103, 161, 228);
+  border-color: rgb(103, 161, 228);
   color: white;
 }
 
 .actions .button--alt {
-  color: #8a2b06;
+  color: rgba(148, 187, 233, 1);
 }
 
 .actions .button {
-  background-color: #8a2b06;
+  background-color: rgba(148, 187, 233, 1);
   color: white;
 }

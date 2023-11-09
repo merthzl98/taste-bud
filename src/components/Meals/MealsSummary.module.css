@@ -20,7 +20,7 @@
 .summary img {
   max-width: 10rem;
   height: auto;
-  border-radius: .25rem;
+  border-radius: 0.25rem;
 }
 
 .description {
@@ -30,4 +30,14 @@
 .description h2 {
   font-size: 2rem;
   margin-top: 0;
+}
+
+@media (700px >= width) {
+  .summary img {
+    display: none;
+  }
+
+  .summary {
+    margin-top: -8rem;
+  }
 }
