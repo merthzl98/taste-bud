@@ -1,9 +1,9 @@
 <h2>About the project</h2>
-<p>It is simply designed to display and list the expenses entered into the system as a percentage in monthly bars according to the desired year. In summary, we can call it an <b>expense calendar</b>.</p>
+<p>A simple food ordering website with a nice design.</p>
 
 <h3>Build with:</h3>
 
-» React JS
+» React JS <br>
 » Module CSS
 
 
