@@ -1,13 +1,11 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 
 import Modal from "../UI/Modal";
 import CartItem from "./CartItem";
 import classes from "./Cart.module.css";
 import CartContext from "../../store/cart-context";
-import Form from "../UserForm/Form";
 
 const Cart = (props) => {
-  const [openForm, setOpenForm] = useState(false);
   const cartCtx = useContext(CartContext);
 
   const totalAmount = `$${cartCtx.totalAmount.toFixed(2)}`;
@@ -19,6 +17,12 @@ const Cart = (props) => {
 
   const cartItemAddHandler = (item) => {
     cartCtx.addItem(item);
+  };
+
+  const orderHandler = () => {
+    props.onClose();
+    cartCtx.resetCart();
+    props.onShowAlert();
   };
 
   const cartItems = (
@@ -36,10 +40,6 @@ const Cart = (props) => {
     </ul>
   );
 
-  const openFormHandler = () => {
-    setOpenForm(true);
-  };
-
   return (
     <Modal onClose={props.onClose}>
       {cartItems}
@@ -52,11 +52,10 @@ const Cart = (props) => {
           Close
         </button>
         {hasItems && (
-          <button className={classes.button} onClick={openFormHandler}>
+          <button className={classes.button} onClick={orderHandler}>
             Order
           </button>
         )}
-        {openForm && <Form onClose={props.onClose} />}
       </div>
     </Modal>
   );
