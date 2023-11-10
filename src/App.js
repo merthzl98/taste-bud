@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     isShownAlert &&
       setTimeout(() => {
-        setIsShownAlert((prevState) => !prevState);
+        setIsShownAlert(false);
       }, 5000);
   }, [isShownAlert]);
 
