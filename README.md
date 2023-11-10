@@ -9,5 +9,5 @@
 
 <h2>Screenshots of the Project 📸</h2>
 <br>
-<!-- <img src='https://github.com/merthzl98/expense/blob/master/public/add-expensive.png?raw=trueJ'/> -->
+<img src='https://github.com/merthzl98/taste-bud/blob/master/src/assets/app.png?raw=true'/>
 
